@@ -44,7 +44,9 @@ function generateTable() {
 
 function generateTableRow(screenshot) {
   const { brand, platform, description, before, after } = screenshot;
-  return `|**[${brand}, ${platform}]**: ${description}|<img src="${before}" height=${IMAGE_SIZE}>|<img src="${after}" height=${IMAGE_SIZE}>|`;
+  return `|**[${brand}, ${platform}]**: ${description}|${
+    before ? `<img src="${before}" height=${IMAGE_SIZE}>` : ""
+  }|${after ? `<img src="${after}" height=${IMAGE_SIZE}>` : ""}|`;
 }
 
 function processMdUrl(string) {
