@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+.DS_store
+
+mr-table-input.md
+mr-table-output.md
