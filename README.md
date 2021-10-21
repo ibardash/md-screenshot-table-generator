@@ -14,8 +14,10 @@ chmod +x ./script.js
 1. Make screenshots (Use `Cmd+S` shortcut to make it faster if using simulator or `Cmd+Shift+3` for web). Name the files in the following pattern (**IMPORTANT**):
 
 ```
-{"before"/"after"}-{BRAND}-{PLATFORM}-{DESCRIPTION_IN_SNAKE_CASE}
+{"before"/"after"}-{BRAND}-{PLATFORM}-{DESCRIPTION}
 ```
+
+The description can be in snake_case or include whitespaces - when uploaded to GitLab, it will replace whitespaces with underscores.
 
 For example:
 
