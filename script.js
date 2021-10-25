@@ -56,7 +56,7 @@ function processMdUrl(string) {
   return {
     state,
     brand: capitalise(brand),
-    platform: formatPlatformName(platform),
+    platform: formatPlatformName(platform.replace(/_/g, " ")),
     description: capitalise(description.replace(/_/g, " ")),
     url,
   };
