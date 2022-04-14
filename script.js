@@ -51,7 +51,7 @@ function generateTableRow(screenshot) {
 
 function processMdUrl(string) {
   const [_full, text, url] = string.match(MD_URL_REGEX);
-  const [state, brand, platform, description] = text.split("-");
+  const [state, brand, platform, description = ''] = text.split("-");
 
   return {
     state,
